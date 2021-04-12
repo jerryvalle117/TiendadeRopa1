@@ -9,7 +9,7 @@
         <div class="row">
 
         @foreach (var producto in Model
-            .Where(r=> r.Categoria.Descripcion == "Pizzas solas")
+            .Where(r=> r.Categoria.Descripcion == "pizzas solas")
             .Take(4)
             .OrderBy(r => Guid.NewGuid())
             )
